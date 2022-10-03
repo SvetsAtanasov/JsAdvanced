@@ -1,9 +1,8 @@
 function toggle() {
   const button = document.querySelector(".button");
   const extra = document.getElementById("extra");
-  let isShown = extra.style.display === "none";
 
-  if (isShown) {
+  if (extra.style.display === "none") {
     button.textContent = "Less";
     extra.style.display = "block";
   } else {
