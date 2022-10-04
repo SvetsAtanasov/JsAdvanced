@@ -38,7 +38,7 @@ function solve(input) {
           const inheritName = split[3];
           const inheritObj = objects.find((x) => x.name === inheritName);
           const inheritingObj = objects.find((x) => x.name === split[1]);
-  
+
           Object.keys(inheritObj).forEach((key) => {
             if (!inheritingObj.hasOwnProperty(key)) {
               inheritingObj[key] = inheritObj[key];
